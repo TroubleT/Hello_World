@@ -1,7 +1,12 @@
 function changeColor() {
     let textHello = document.getElementById("text");
-    textHello.style.color="random(), random(), random()";
+    textHello.style.color="color";
 }
-function random(){
-    Math.floor(Math.random() * 257);
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
