@@ -1,7 +1,3 @@
-function changeColor() {
-    let textHello = document.getElementById("text");
-    textHello.style.color="getRandomColor()";
-}
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
@@ -9,4 +5,8 @@ function getRandomColor() {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
+}
+function changeColor() {
+    let textHello = document.getElementById("text");
+    let color = textHello.style.color;
 }
