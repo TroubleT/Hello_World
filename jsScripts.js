@@ -1,6 +1,6 @@
 function changeColor() {
     let textHello = document.getElementById("text");
-    textHello.style.color="color";
+    textHello.style.color="getRandomColor()";
 }
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
