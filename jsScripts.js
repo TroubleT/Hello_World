@@ -9,12 +9,5 @@ function getRandomColor() {
 
 function changeColor() {
     let textHello = document.getElementById("text");
-    let randomColor = getRandomColor();
-    textHello.style.color = randomColor;
+    textHello.style.color = getRandomColor();
 }
-
-
-// function changeColor() {
-//     let textHello = document.getElementById("text");
-//     textHello.style.color = "red";
-// }
