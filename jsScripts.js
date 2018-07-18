@@ -6,7 +6,15 @@ function getRandomColor() {
   }
   return color;
 }
+
 function changeColor() {
     let textHello = document.getElementById("text");
-    let color = textHello.style.color;
+    let randomColor = getRandomColor();
+    textHello.style.color = randomColor;
 }
+
+
+// function changeColor() {
+//     let textHello = document.getElementById("text");
+//     textHello.style.color = "red";
+// }
